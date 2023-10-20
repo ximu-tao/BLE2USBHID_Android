@@ -263,10 +263,8 @@ public class MainActivity extends AppCompatActivity {
 
                 String cmd = edt.getText().toString();
 
-                if(cmd.contains(":")) {
-                    edtmsg.setText("字符串指令测试\n");
-                    ble2hid.sendDataQueue(cmd);
-                }
+                edtmsg.setText("字符串指令测试\n");
+                ble2hid.sendDataQueue(cmd);
 
             }
         });
